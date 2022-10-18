@@ -29,6 +29,15 @@ app.get("/compose",(req,res)=>{
   res.render("compose",);
 })
 
+app.post("/compose",(req,res)=>{
+  // let inp=req.body.composeInput;
+  // console.log(inp);
+  const post={
+    title:req.body.titleInput,
+    content:req.body.postInput
+  };
+})
+
 
 
 
